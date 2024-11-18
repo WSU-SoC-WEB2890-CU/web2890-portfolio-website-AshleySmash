@@ -1,0 +1,10 @@
+@import "variables";
+
+$headings-font-family: $font-header;
+$font-family-base: $font-body;
+$primary: $primary-color;
+$secondary: $secondary-color;
+$dark: $accent-orange;
+$info: $background-dark;
+
+@import "~bootstrap/scss/bootstrap";

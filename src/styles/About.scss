@@ -1,0 +1,73 @@
+@import "custom";
+
+.about {
+  h1 {
+    @include responsive-header;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  .card {
+    background-color: darken($accent-light, 3%);
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 5px 8px $text-light;
+    &:hover {
+      transform: scale(1.02);
+    }
+    .card-body {
+      .bi-coin {
+        color: rgb(190, 163, 13);
+      }
+      .bi-cloud-fill {
+        color: $accent-blue;
+      }
+      .bi-scissors {
+        color: $text-light;
+      }
+      .bi-scissors,
+      .bi-cloud-fill,
+      .bi-coin {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+  }
+
+  .bi {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  h5 {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .display-5 {
+    font-size: 3rem;
+  }
+
+  .display-4 {
+    font-size: 4rem;
+  }
+}
+
+//       //   display: flex;
+//       gap: 1rem;
+
+//       h5 {
+//         font-weight: bold;
+//       }
+//     }
+//   }

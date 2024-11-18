@@ -1,0 +1,112 @@
+@import "custom";
+
+.hero {
+  position: relative;
+  height: 50vh;
+  background-image: url("../assets/markus-spiske-6pflEeSzGUo-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(238, 229, 216, 0.85); /* EEE5D8 with 85% opacity */
+
+    .custom-container {
+      flex-direction: column;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        max-width: 85%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      @media (min-width: 992px) {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+      }
+
+      h1 {
+        @include responsive-header;
+        text-align: center;
+
+        @media (min-width: 992px) {
+          text-align: start;
+        }
+      }
+
+      .lead {
+        color: lighten($text-color, 10%);
+        text-align: center;
+        width: 100%;
+
+        @media (min-width: 992px) {
+          text-align: left;
+        }
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+
+        @media (min-width: 768px) {
+          max-width: 85%;
+          border-radius: 3rem;
+          font-size: 2rem;
+        }
+
+        @media (min-width: 992px) {
+          width: 100%;
+          max-width: 850px;
+          margin: 0;
+          border-radius: 5rem 0 0 5rem;
+          align-self: center;
+        }
+
+        &:hover {
+          background-color: $accent-blue;
+        }
+      }
+    }
+  }
+}
+
+.projects-section {
+  background-color: $background-light;
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-family: $font-body;
+      font-size: 1.6rem;
+    }
+  }
+}

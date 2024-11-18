@@ -1,0 +1,128 @@
+@import "custom";
+.contact-page {
+  h1 {
+    @include responsive-header;
+  }
+
+  .accordion {
+    max-width: 700px;
+    .accordion-button {
+      font-size: 1.2rem;
+    }
+  }
+  .contact-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    .contact-box {
+      box-shadow: 0px 4px 8px lighten($text-light, 18%);
+    }
+    .btn-teal {
+      background-color: $secondary-color;
+      &:hover {
+        background-color: $accent-blue;
+      }
+    }
+
+    .form-control {
+      border: 1px solid darken($background-dark, 15%);
+      border-radius: 5px;
+      padding: 8px;
+      font-size: 1rem;
+
+      &:focus {
+        border-color: #056674;
+        box-shadow: 0px 0px 5px rgba(5, 102, 116, 0.5);
+      }
+    }
+  }
+}
+// .contact {
+//   max-width: 600px;
+//   margin: 50px auto;
+//   padding: 20px;
+//   text-align: center;
+//   background-color: $secondary-color;
+//   color: #fff;
+//   border-radius: 10px;
+
+//   h1 {
+//     font-family: $font-header;
+//     font-size: 48px;
+//     margin-bottom: 10px;
+//     color: $primary-color;
+//   }
+
+//   p {
+//     font-family: $font-body;
+//     font-size: 18px;
+//     margin-bottom: 20px;
+//     color: #fff;
+//   }
+
+//   .contact-form {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 15px;
+
+//     label {
+//       font-size: 16px;
+//       text-align: left;
+//       color: #fff;
+//     }
+
+//     input,
+//     textarea {
+//       padding: 10px;
+//       font-size: 16px;
+//       border: 2px solid $primary-color;
+//       border-radius: 5px;
+//       outline: none;
+
+//       &:focus {
+//         border-color: lighten($primary-color, 10%);
+//       }
+//     }
+
+//     textarea {
+//       height: 120px;
+//     }
+
+//     .error-message {
+//       font-size: 14px;
+//       color: #f9a3a3;
+//       text-align: left;
+//       margin-top: -10px;
+//     }
+
+//     .btn-submit {
+//       padding: 10px 20px;
+//       background-color: lighten($primary-color, 10%);
+//       color: #fff;
+//       border: none;
+//       border-radius: 5px;
+//       font-size: 18px;
+//       cursor: pointer;
+//       transition: background-color 0.3s ease;
+
+//       &:hover {
+//         background-color: darken($primary-color, 10%);
+//       }
+//     }
+//   }
+
+//   .thank-you {
+//     margin-top: 20px;
+//     font-size: 18px;
+//     color: #fff;
+//     animation: fade-in 0.5s ease-in-out;
+//   }
+
+//   @keyframes fade-in {
+//     from {
+//       opacity: 0;
+//     }
+//     to {
+//       opacity: 1;
+//     }
+//   }
+// }

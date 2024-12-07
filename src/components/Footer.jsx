@@ -1,10 +1,10 @@
-import React from "react";
+import React from "react"
 
 const Footer = () => (
   <footer className="footer py-4 mt-0 bg-dark">
     <div className="container">
       {/* Contact Information */}
-      <div className="row justify-content-md-center text-start text-md-center">
+      <div className="row justify-content-md-center text-start text-md-center pt-1">
         <div className="col-md-4 mb-3">
           <i className="bi bi-envelope-fill me-2 me-lg-3 fs-3"></i>
           <p className="d-inline">ashleycox1@mail.weber.edu</p>
@@ -39,6 +39,6 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-);
+)
 
-export default Footer;
+export default Footer

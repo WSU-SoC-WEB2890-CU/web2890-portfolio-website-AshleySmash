@@ -1,12 +1,11 @@
-import React from "react";
+import React from "react"
 
 const EducationGoals = () => {
   const goals = [
     {
       percentage: "98%",
       title: "Computer Science Minor",
-      description:
-        "I have almost completed my minor in Computer Science. I only need to take one more class, CS 2420.",
+      description: "I have almost completed my minor in Computer Science. I only need to take one more class, CS 2420.",
       icon: "bi bi-graph-up-arrow",
       label: "Minor",
     },
@@ -20,8 +19,7 @@ const EducationGoals = () => {
     },
     {
       percentage: "81%",
-      title:
-        "Bachelor of Applied Science with Web Development and Design Major",
+      title: "Bachelor of Applied Science with Web Development and Design Major",
       description:
         "I am currently pursuing my Bachelor's degree in Web Design and Development with a Full Stack emphasis at Weber State University. I plan to graduate in Spring 2026.",
       icon: "bi bi-mortarboard",
@@ -35,7 +33,7 @@ const EducationGoals = () => {
       description:
         "I have been applying for internships to gain real-world experience in the field. My goal is to work on projects that challenge me to grow as both a front-end and full-stack developer.",
     },
-  ];
+  ]
 
   return (
     <section className="py-5">
@@ -49,16 +47,12 @@ const EducationGoals = () => {
                   <div className="text-center me-3">
                     <i className={`${goal.icon} text-primary display-4`}></i>
 
-                    {goal.percentage && (
-                      <div className="display-5 text-black fw-bold">
-                        {goal.percentage}
-                      </div>
-                    )}
-                    <p className="mt-2 fs-2">{goal.label}</p>
+                    {goal.percentage && <div className="display-5 text-black fw-bold">{goal.percentage}</div>}
+                    <p className="mt-2 fs-3">{goal.label}</p>
                   </div>
                   <div className="border-start border-black ps-3">
-                    <h5 className="fw-bold fs-3">{goal.title}</h5>
-                    <p className="mb-0 text-muted fs-5">{goal.description}</p>
+                    <h5 className="fw-bold fs-4">{goal.title}</h5>
+                    <p className="mb-0 text-muted">{goal.description}</p>
                   </div>
                 </div>
               </div>
@@ -67,7 +61,7 @@ const EducationGoals = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default EducationGoals;
+export default EducationGoals

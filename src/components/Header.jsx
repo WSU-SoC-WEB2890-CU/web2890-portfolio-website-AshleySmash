@@ -1,5 +1,5 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from "react"
+import { NavLink } from "react-router-dom"
 
 const Header = () => (
   <header>
@@ -11,18 +11,13 @@ const Header = () => (
       <div className="d-none d-lg-flex ms-auto me-3">
         <ul className="navbar-nav d-flex flex-row align-items-center">
           <li className="nav-item">
-            <NavLink
-              className={({ isActive }) =>
-                `nav-link fs-3 px-3 me-3 me-md-2 ${isActive ? "active" : ""}`
-              }
-              to="/"
-            >
+            <NavLink className={({ isActive }) => `nav-link fs-5 px-3 me-3 me-md-2 ${isActive ? "active" : ""}`} to="/">
               Home
             </NavLink>
           </li>
           <li className="nav-item dropdown position-relative">
             <a
-              className="nav-link dropdown-toggle fs-3 px-3 ms-3 ms-md-2"
+              className="nav-link dropdown-toggle fs-5 px-3 ms-3 ms-md-2"
               href="#"
               id="projectsDropdown"
               role="button"
@@ -38,9 +33,7 @@ const Header = () => (
             >
               <li>
                 <NavLink
-                  className={({ isActive }) =>
-                    `dropdown-item fs-5 ${isActive ? "active" : ""}`
-                  }
+                  className={({ isActive }) => `dropdown-item fs-5 ${isActive ? "active" : ""}`}
                   to="/projects/thingamajiggers"
                 >
                   ThingAmajiggers
@@ -48,9 +41,7 @@ const Header = () => (
               </li>
               <li>
                 <NavLink
-                  className={({ isActive }) =>
-                    `dropdown-item fs-5 ${isActive ? "active" : ""}`
-                  }
+                  className={({ isActive }) => `dropdown-item fs-5 ${isActive ? "active" : ""}`}
                   to="/projects/stylesconference"
                 >
                   Styles Conference
@@ -58,9 +49,7 @@ const Header = () => (
               </li>
               <li>
                 <NavLink
-                  className={({ isActive }) =>
-                    `dropdown-item fs-5 ${isActive ? "active" : ""}`
-                  }
+                  className={({ isActive }) => `dropdown-item fs-5 ${isActive ? "active" : ""}`}
                   to="/projects/rockpaperscissors"
                 >
                   Rock Paper Scissors
@@ -68,9 +57,7 @@ const Header = () => (
               </li>
               <li>
                 <NavLink
-                  className={({ isActive }) =>
-                    `dropdown-item fs-5 ${isActive ? "active" : ""}`
-                  }
+                  className={({ isActive }) => `dropdown-item fs-5 ${isActive ? "active" : ""}`}
                   to="/projects/tortugalobby"
                 >
                   Tortuga Lobby
@@ -78,9 +65,7 @@ const Header = () => (
               </li>
               <li>
                 <NavLink
-                  className={({ isActive }) =>
-                    `dropdown-item fs-5 ${isActive ? "active" : ""}`
-                  }
+                  className={({ isActive }) => `dropdown-item fs-5 ${isActive ? "active" : ""}`}
                   to="/projects/culinaryconnect"
                 >
                   CulinaryConnect
@@ -88,9 +73,7 @@ const Header = () => (
               </li>
               <li>
                 <NavLink
-                  className={({ isActive }) =>
-                    `dropdown-item fs-5 ${isActive ? "active" : ""}`
-                  }
+                  className={({ isActive }) => `dropdown-item fs-5 ${isActive ? "active" : ""}`}
                   to="/projects/cardeal"
                 >
                   CarDeal
@@ -100,9 +83,7 @@ const Header = () => (
           </li>
           <li className="nav-item">
             <NavLink
-              className={({ isActive }) =>
-                `nav-link fs-3 px-3 mx-3 mx-md-1 ${isActive ? "active" : ""}`
-              }
+              className={({ isActive }) => `nav-link fs-5 px-3 mx-3 mx-md-1 ${isActive ? "active" : ""}`}
               to="/case-study"
             >
               Case Study
@@ -110,9 +91,7 @@ const Header = () => (
           </li>
           <li className="nav-item">
             <NavLink
-              className={({ isActive }) =>
-                `nav-link fs-3 px-3 mx-3 mx-md-1 ${isActive ? "active" : ""}`
-              }
+              className={({ isActive }) => `nav-link fs-5 px-3 mx-3 mx-md-1 ${isActive ? "active" : ""}`}
               to="/about"
             >
               About
@@ -120,9 +99,7 @@ const Header = () => (
           </li>
           <li className="nav-item">
             <NavLink
-              className={({ isActive }) =>
-                `nav-link fs-3 px-3 me-3 me-md-1 ${isActive ? "active" : ""}`
-              }
+              className={({ isActive }) => `nav-link fs-5 px-3 me-3 me-md-1 ${isActive ? "active" : ""}`}
               to="/contact"
             >
               Contact Us
@@ -142,16 +119,9 @@ const Header = () => (
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div
-        className="offcanvas offcanvas-end bg-dark"
-        id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel"
-      >
+      <div className="offcanvas offcanvas-end bg-dark" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div className="offcanvas-header mb-0 pb-0">
-          <h5
-            className="offcanvas-title text-decoration-underline text-black fs-1"
-            id="offcanvasNavbarLabel"
-          >
+          <h5 className="offcanvas-title text-decoration-underline text-black fs-2" id="offcanvasNavbarLabel">
             Menu
           </h5>
           <button
@@ -164,18 +134,13 @@ const Header = () => (
         <div className="offcanvas-body">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink
-                className={({ isActive }) =>
-                  `nav-link fs-4 ${isActive ? "active" : ""}`
-                }
-                to="/"
-              >
+              <NavLink className={({ isActive }) => `nav-link fs-5 ${isActive ? "active" : ""}`} to="/">
                 Home
               </NavLink>
             </li>
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle fs-4"
+                className="nav-link dropdown-toggle fs-5"
                 href="#"
                 id="offcanvasProjectsDropdown"
                 role="button"
@@ -184,15 +149,10 @@ const Header = () => (
               >
                 Projects
               </a>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="offcanvasProjectsDropdown"
-              >
+              <ul className="dropdown-menu" aria-labelledby="offcanvasProjectsDropdown">
                 <li>
                   <NavLink
-                    className={({ isActive }) =>
-                      `dropdown-item fs-5 ${isActive ? "active" : ""}`
-                    }
+                    className={({ isActive }) => `dropdown-item fs-5 ${isActive ? "active" : ""}`}
                     to="/projects/thingamajiggers"
                   >
                     ThingAmajiggers
@@ -200,9 +160,7 @@ const Header = () => (
                 </li>
                 <li>
                   <NavLink
-                    className={({ isActive }) =>
-                      `dropdown-item fs-5 ${isActive ? "active" : ""}`
-                    }
+                    className={({ isActive }) => `dropdown-item fs-5 ${isActive ? "active" : ""}`}
                     to="/projects/stylesconference"
                   >
                     Styles Conference
@@ -210,9 +168,7 @@ const Header = () => (
                 </li>
                 <li>
                   <NavLink
-                    className={({ isActive }) =>
-                      `dropdown-item fs-5 ${isActive ? "active" : ""}`
-                    }
+                    className={({ isActive }) => `dropdown-item fs-5 ${isActive ? "active" : ""}`}
                     to="/projects/rockpaperscissors"
                   >
                     Rock Paper Scissors
@@ -220,9 +176,7 @@ const Header = () => (
                 </li>
                 <li>
                   <NavLink
-                    className={({ isActive }) =>
-                      `dropdown-item fs-5 ${isActive ? "active" : ""}`
-                    }
+                    className={({ isActive }) => `dropdown-item fs-5 ${isActive ? "active" : ""}`}
                     to="/projects/tortugalobby"
                   >
                     Tortuga Lobby
@@ -230,9 +184,7 @@ const Header = () => (
                 </li>
                 <li>
                   <NavLink
-                    className={({ isActive }) =>
-                      `dropdown-item fs-5 ${isActive ? "active" : ""}`
-                    }
+                    className={({ isActive }) => `dropdown-item fs-5 ${isActive ? "active" : ""}`}
                     to="/projects/culinaryconnect"
                   >
                     CulinaryConnect
@@ -240,9 +192,7 @@ const Header = () => (
                 </li>
                 <li>
                   <NavLink
-                    className={({ isActive }) =>
-                      `dropdown-item fs-5 ${isActive ? "active" : ""}`
-                    }
+                    className={({ isActive }) => `dropdown-item fs-5 ${isActive ? "active" : ""}`}
                     to="/projects/cardeal"
                   >
                     CarDeal
@@ -251,32 +201,17 @@ const Header = () => (
               </ul>
             </li>
             <li className="nav-item">
-              <NavLink
-                className={({ isActive }) =>
-                  `nav-link fs-4 ${isActive ? "active" : ""}`
-                }
-                to="/case-study"
-              >
+              <NavLink className={({ isActive }) => `nav-link fs-5 ${isActive ? "active" : ""}`} to="/case-study">
                 Case Study
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                className={({ isActive }) =>
-                  `nav-link fs-4 ${isActive ? "active" : ""}`
-                }
-                to="/about"
-              >
+              <NavLink className={({ isActive }) => `nav-link fs-5 ${isActive ? "active" : ""}`} to="/about">
                 About
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                className={({ isActive }) =>
-                  `nav-link fs-4 ${isActive ? "active" : ""}`
-                }
-                to="/contact"
-              >
+              <NavLink className={({ isActive }) => `nav-link fs-5 ${isActive ? "active" : ""}`} to="/contact">
                 Contact Us
               </NavLink>
             </li>
@@ -285,6 +220,6 @@ const Header = () => (
       </div>
     </nav>
   </header>
-);
+)
 
-export default Header;
+export default Header

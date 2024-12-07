@@ -4,19 +4,15 @@
   h1 {
     @include responsive-header;
   }
-  h2 {
-    font-size: 2.3rem;
-  }
 
+  .hobbies {
+    max-width: 1200px;
+  }
   .card {
     background-color: darken($accent-light, 3%);
     border: none;
     border-radius: 10px;
-    transition: transform 0.2s ease-in-out;
     box-shadow: 0 5px 8px $text-light;
-    &:hover {
-      transform: scale(1.02);
-    }
     .card-body {
       .bi-coin {
         color: rgb(190, 163, 13);
@@ -55,19 +51,10 @@
     font-weight: bold;
   }
   .display-5 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .display-4 {
     font-size: 4rem;
   }
 }
-
-//       //   display: flex;
-//       gap: 1rem;
-
-//       h5 {
-//         font-weight: bold;
-//       }
-//     }
-//   }

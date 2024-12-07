@@ -14,8 +14,18 @@
   box-sizing: inherit;
   font-family: $font-body;
 }
+body {
+  background-color: $background-light;
+}
+
 main {
   background-color: $background-light;
+}
+h2 {
+  font-size: 1.8 rem;
+}
+p {
+  font-size: 1rem;
 }
 div a {
   color: $text-color;
@@ -30,7 +40,9 @@ div a {
   &:hover {
     color: $secondary-color;
     text-decoration: underline;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    transition:
+      color 0.3s ease,
+      text-decoration 0.3s ease;
   }
   &:active {
     color: $secondary-color;
@@ -45,7 +57,9 @@ div a {
   &:hover {
     text-decoration: underline;
     font-weight: normal;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    transition:
+      color 0.3s ease,
+      text-decoration 0.3s ease;
   }
 }
 

@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import "mixins";
+
+$primary-color: #e88f01;
+$secondary-color: #12737e;
+$accent-orange: #f9daa7;
+$accent-blue: #055f6a;
+$accent-light: #ffffff;
+$background-dark: #eee5d8;
+$background-light: #fffaf1;
+$text-color: #000000;
+$text-light: #757575;
+$font-header: "HeadlandOne", serif;
+$font-body: "Lora", serif;
+
+body {
+  font-family: $font-body;
+  color: $text-color;
+}

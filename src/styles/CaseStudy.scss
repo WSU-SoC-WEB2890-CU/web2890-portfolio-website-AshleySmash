@@ -1,0 +1,78 @@
+@import "custom";
+
+.case-study {
+  margin: 0;
+  padding: 0;
+
+  p {
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-size: 1.65rem;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .obstacles {
+    background-color: $accent-orange;
+    border-top: 0.5rem solid $secondary-color;
+    border-bottom: 0.5rem solid $secondary-color;
+
+    @media (min-width: 768px) {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+    @media (min-width: 992px) {
+      margin-left: 7rem;
+      margin-right: 7rem;
+    }
+  }
+
+  .refining {
+    @media (min-width: 768px) {
+      border-top: 0.5rem solid $text-light;
+      border-bottom: 0.5rem solid $text-light;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+    @media (min-width: 992px) {
+      margin-left: 7rem;
+      margin-right: 7rem;
+    }
+  }
+
+  .conclusion {
+    box-shadow: 0.1rem 0.2rem 0.5rem $text-light;
+  }
+
+  a {
+    color: darken($accent-orange, 18%);
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .sitemaps {
+      max-width: 55%;
+    }
+    .fan-frustrations {
+      img {
+        min-width: 615px;
+      }
+    }
+    .problem-statement {
+      max-width: 75%;
+    }
+  }
+  @media (min-width: 1300px) {
+    .fan-frustrations,
+    .prototype {
+      max-width: 85%;
+    }
+  }
+}

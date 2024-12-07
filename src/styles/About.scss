@@ -1,0 +1,60 @@
+@import "custom";
+
+.about {
+  h1 {
+    @include responsive-header;
+  }
+
+  .hobbies {
+    max-width: 1200px;
+  }
+  .card {
+    background-color: darken($accent-light, 3%);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px $text-light;
+    .card-body {
+      .bi-coin {
+        color: rgb(190, 163, 13);
+      }
+      .bi-cloud-fill {
+        color: $accent-blue;
+      }
+      .bi-scissors {
+        color: $text-light;
+      }
+      .bi-scissors,
+      .bi-cloud-fill,
+      .bi-coin {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+  }
+
+  .bi {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  h5 {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .display-5 {
+    font-size: 2rem;
+  }
+
+  .display-4 {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,96 @@
+@import "custom";
+
+// General
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  font-family: $font-body;
+}
+body {
+  background-color: $background-light;
+}
+
+main {
+  background-color: $background-light;
+}
+h2 {
+  font-size: 1.8 rem;
+}
+p {
+  font-size: 1rem;
+}
+div a {
+  color: $text-color;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+// Header
+.navbar .nav-link {
+  color: $text-color;
+  &:hover {
+    color: $secondary-color;
+    text-decoration: underline;
+    transition:
+      color 0.3s ease,
+      text-decoration 0.3s ease;
+  }
+  &:active {
+    color: $secondary-color;
+  }
+}
+
+.nav-item .nav-link.active {
+  background-color: $primary-color;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  &:hover {
+    text-decoration: underline;
+    font-weight: normal;
+    transition:
+      color 0.3s ease,
+      text-decoration 0.3s ease;
+  }
+}
+
+.nav-item .nav-link {
+  color: $text-color;
+}
+
+.navbar .nav-item .dropdown-toggle {
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+
+  &[aria-expanded="true"] {
+    color: $secondary-color;
+  }
+}
+
+.dropdown .dropdown-menu {
+  background-color: $background-light;
+  border: none;
+  margin-bottom: 1rem;
+
+  .dropdown-item {
+    color: $text-color;
+
+    &:hover {
+      background-color: $accent-blue;
+      color: $accent-light;
+    }
+  }
+}

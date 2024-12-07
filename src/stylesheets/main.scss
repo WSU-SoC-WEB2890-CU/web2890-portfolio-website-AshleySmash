@@ -1,3 +1,31 @@
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  background-color: $background-light;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  font-family: $font-body;
+}
+body {
+  background-color: $background-light;
+}
+main {
+  background-color: $background-light;
+}
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1rem;
+}
